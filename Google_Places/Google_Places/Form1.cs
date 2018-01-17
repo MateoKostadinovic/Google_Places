@@ -146,6 +146,7 @@ namespace GooglePlaces
                 FormEditCity.inptEditCityLat.Text = dataGridViewCities.Rows[e.RowIndex].Cells[2].Value.ToString();
                 FormEditCity.inptEditCityLng.Text = dataGridViewCities.Rows[e.RowIndex].Cells[3].Value.ToString();
                 FormEditCity.Show();
+                Trace.WriteLine(lblCity);
             }
             if (dataGridViewCities.CurrentCell.ColumnIndex.Equals(5) && e.RowIndex != -1)
             {
